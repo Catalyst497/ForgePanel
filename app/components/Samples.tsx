@@ -1,9 +1,16 @@
 "use client"
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {doorTypes} from '../assets/doorTypes'
+import {useAppStore} from "../hooks/useAppStore"
+
 const Samples = () => {
+  const {activePosition} = useAppStore();
  const [doorResults, setDoorResults] = useState<any>([])
- 
+useEffect(() => {
+  if(activePosition) {
+    const results = doorTypes.filter((door) => door.location === activePosition)
+  }
+}, [activePosition])
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">

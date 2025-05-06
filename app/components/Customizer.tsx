@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import {useAppStore} from "../hooks/useAppStore"
 
 const Customizer = () => {
-  const [activePosition, setActivePosition] = useState<number | null>(null);
-  const doorPositions = ["Exterior", "Interior"];
+  const {activePosition, doorPositions, setActivePosition} = useAppStore();
+  
   return (
     <div className="fixed bottom-4 right-4 p-4 rounded-sm backdrop-blur-lg bg-transparent font-semibold border-[1px]">
       <h2>Customize your door</h2>
