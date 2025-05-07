@@ -10,16 +10,11 @@ Title: Door
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
-import { useSpring, a } from "@react-spring/three";
 
 export function Model(props) {
   const { nodes, materials } = useGLTF("/door.glb");
   const { open } = props;
 
-  const { rotationY } = useSpring({
-    rotationY: open ? -Math.PI / 2 : 0,
-    config: { tension: 120, friction: 14 },
-  });
   return (
     <group
       {...props}
@@ -28,7 +23,6 @@ export function Model(props) {
       position={[0, 0, 0]}
       rotation={[0, 4.75, 0]}
     >
-      {/* <a.group rotation-y={rotationY} position={[-.5, 0, 0]}> */}
         <group rotation={[-Math.PI / 2, 0, 0]}>
           <mesh
             geometry={nodes.doorHandle_0.geometry}
@@ -42,7 +36,6 @@ export function Model(props) {
             position={[-0.027, 0, 1.258]}
           />
         </group>
-      {/* </a.group> */}
     </group>
   );
 }
