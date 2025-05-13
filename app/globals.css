@@ -38,3 +38,6 @@ h1 {
 h2 {
   @apply text-2xl;
 }
+h3 {
+  @apply text-xl/8 font-semibold;
+}

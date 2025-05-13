@@ -22,14 +22,14 @@
   },
   {
     "name": "composite double door 3",
-    "image": "/product-images/composite double door 3",
+    "image": "/product-images/composite double door 3.jpg",
     "material": "composite",
     "type": "double",
     "style": "door"
   },
   {
     "name": "composite double door 4",
-    "image": "/product-images/composite double door 4",
+    "image": "/product-images/composite double door 4.jpg",
     "material": "composite",
     "type": "double",
     "style": "door"
@@ -64,7 +64,7 @@
   },
   {
     "name": "composite swing door",
-    "image": "/product-images/composite swing door.jpg",
+    "image": "/product-images/composite swing door.webp",
     "material": "composite",
     "type": "swing",
     "style": "door"
@@ -127,7 +127,7 @@
   },
   {
     "name": "glass barn door 3",
-    "image": "/product-images/glass barn door 3.jpg",
+    "image": "/product-images/glass barn door 3.png",
     "material": "glass",
     "type": "barn",
     "style": "door"
@@ -190,7 +190,7 @@
   },
   {
     "name": "glass pocket door 2",
-    "image": "/product-images/glass pocket door 2.jpg",
+    "image": "/product-images/glass pocket door 2.png",
     "material": "glass",
     "type": "pocket",
     "style": "door"
@@ -218,14 +218,14 @@
   },
   {
     "name": "glass sliding door",
-    "image": "/product-images/glass sliding door.jpg",
+    "image": "/product-images/glass sliding door.jpeg",
     "material": "glass",
     "type": "sliding",
     "style": "door"
   },
   {
     "name": "glass swing door 2",
-    "image": "/product-images/glass swing door 2.jpg",
+    "image": "/product-images/glass swing door 2.avif",
     "material": "glass",
     "type": "swing",
     "style": "door"
@@ -281,7 +281,7 @@
   },
   {
     "name": "metal double door 3",
-    "image": "/product-images/metal double door 3.jpg",
+    "image": "/product-images/metal double door 3.webp",
     "material": "metal",
     "type": "double",
     "style": "door"
@@ -389,7 +389,7 @@
     "material": "unknown",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/pocket-door.jpg"
+    "image": "/product-images/pocket-door.webp"
   },
   {
     "name": "pocket-door2",
@@ -410,21 +410,21 @@
     "material": "primed",
     "type": "french",
     "style": "door",
-    "image": "/product-images/primed french door 2.jpg"
+    "image": "/product-images/primed french door 2.webp"
   },
   {
     "name": "primed french door 3",
     "material": "primed",
     "type": "french",
     "style": "door",
-    "image": "/product-images/primed french door 3.jpg"
+    "image": "/product-images/primed french door 3.webp"
   },
   {
     "name": "primed french door",
     "material": "primed",
     "type": "french",
     "style": "door",
-    "image": "/product-images/primed french door.jpg"
+    "image": "/product-images/primed french door.webp"
   },
   {
     "name": "pvc double door 2",
@@ -438,7 +438,7 @@
     "material": "pvc",
     "type": "double",
     "style": "door",
-    "image": "/product-images/PVC double door.jpg"
+    "image": "/product-images/PVC double door.webp"
   },
   {
     "name": "pvc french door 2",
@@ -473,7 +473,7 @@
     "material": "glass",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/sliding glass door 3.jpg"
+    "image": "/product-images/sliding glass door 3.png"
   },
   {
     "name": "sliding glass door",
@@ -529,14 +529,14 @@
     "material": "wood",
     "type": "bifold",
     "style": "door",
-    "image": "/product-images/wood bifold door 2.jpg"
+    "image": "/product-images/wood bifold door 2.webp"
   },
   {
     "name": "wood bifold door 3",
     "material": "wood",
     "type": "bifold",
     "style": "door",
-    "image": "/product-images/wood bifold door 3.jpg"
+    "image": "/product-images/wood bifold door 3.webp"
   },
   {
     "name": "wood bifold door 4",
@@ -676,6 +676,6 @@
     "material": "wood",
     "type": "swing",
     "style": "door",
-    "image": "/product-images/wooden swing door.jpg"
+    "image": "/product-images/wooden swing door.webp"
   }
 ]
