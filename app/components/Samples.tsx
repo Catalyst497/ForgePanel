@@ -13,9 +13,11 @@ type Door = {
 };
 
 const Samples = () => {
-  const { activePosition, setActivePosition, doorPositions } = useAppStore();
+  const { activePosition, materials, setActivePosition, doorPositions, activeModel, setActiveModel } =
+    useAppStore();
   const [doorResults, setDoorResults] = useState<any>([]);
   const [viewType, setViewType] = useState(1);
+  const [currentType, setCurrentType] = useState<string | null>(null);
 
   function selectOneDoorPerType(doors: Door[]): Door[] {
     const seenTypes = new Set();
@@ -32,7 +34,7 @@ const Samples = () => {
   }
 
   useEffect(() => {
-    if (activePosition !== null) {
+    if (activePosition !== null && typeof activePosition === "number") {
       setViewType(1);
       if (doorPositions[activePosition] === "Exterior") {
         const selectedDoors = doorTypes.filter((door) => {
@@ -53,21 +55,67 @@ const Samples = () => {
   }, [activePosition]);
 
   const handleTypeClick = (e: any, door: Door) => {
-    setDoorResults(doorTypes.filter((lekun) => lekun.type === door.type));
-    setActivePosition(null);
+    const typeDoors = doorTypes.filter((lekun) => lekun.type === door.type);
+    setDoorResults(typeDoors);
+    setCurrentType(door.type);
+    setActivePosition("remove");
     setViewType(2);
   };
-  // useMemo(() => {console.log(doorResults)}, [doorResults])
+  const handleDoorClick = (material: string) => {
+    if(material !== "wood") return;
+    setActiveModel("new-door")
+  }
   return (
     <div>
       {doorResults.length > 0 ? (
         <div>
-          {activePosition !== null && (
+          {typeof activePosition === "number" && (
             <h2 className="py-2 font-bold">
               What kind of door are we going for?
             </h2>
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {currentType && (
+            <h2 className="py-2">
+              So, we are going for {currentType} doors, hmm?
+            </h2>
+          )}
+          {currentType && (
+            <div className="">
+              {materials.map((material, i: number) => {
+                const materialDoors = doorResults.filter(
+                  (door: Door) => door.material === material
+                );
+                if (materialDoors.length) {
+                  if(material){}
+                  return (
+                    <div key={i} className="mb-12">
+                      <div className="mt-4 mb-4 ">
+                        <h3 className="capitalize">{material}?</h3>
+                        <div className="w-[90%] h-[1px] bg-gray-100/30 my-2"></div>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        {materialDoors.map((door: Door, i: number) => (
+                          <div
+                            key={i}
+                            onClick={() => handleDoorClick(material)}
+                            className="relative  shadow-md overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 w-[15rem]"
+                          >
+                            <img
+                              src={door.image}
+                              alt={door.name}
+                              className="w-full h-[15rem] object-cover"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </div>
+          )}
+          {!currentType && <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {doorResults.map((door: Door, index: number) => {
               return (
                 <div
@@ -90,7 +138,7 @@ const Samples = () => {
                 </div>
               );
             })}
-          </div>
+          </div>}
         </div>
       ) : (
         <h2>Please make a selection, and let's get started.</h2>

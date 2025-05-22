@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menuClosed, setMenuClosed] = useState(true);
   const navItems = ["About Us", "Clap for Me", "Projects", "Pricing"];
   return (
-    <nav className="fixed top-0 py-4 w-full backdrop-blur-lg">
+    <nav className="fixed z-[999] top-0 py-4 w-full backdrop-blur-lg">
       <div className="flex items-center justify-between mx-auto max-w-[80%]">
         <div>
           <h2>ForgePanel</h2>

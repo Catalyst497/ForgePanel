@@ -99,7 +99,7 @@
   },
   {
     "name": "flush-door",
-    "image": "/product-images/flush-door.jpg",
+    "image": "/product-images/flush-door.webp",
     "material": "wood",
     "type": "flush",
     "style": "door"
