@@ -7,11 +7,14 @@ import { SlidingDoor } from "../assets/3dmodel/SlidingDoor";
 import { NewDoor } from "../assets/3dmodel/NewDoor";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useAppStore } from "../hooks/useAppStore";
+import { useProgress, Html } from "@react-three/drei";
 import CustomLoader from "./CustomLoader";
 
 const Prototype = () => {
   const [open, setOpen] = useState(false);
   const { activeModel } = useAppStore();
+  const { progress } = useProgress();
+
   useMemo(() => {
     console.log(activeModel);
   }, [activeModel]);
@@ -28,7 +31,15 @@ const Prototype = () => {
               <ambientLight intensity={1} />
               <directionalLight position={[5, 5, 5]} intensity={2} />
               <pointLight position={[-5, 5, 5]} intensity={2} />
-              <Suspense fallback={<CustomLoader />}>
+              <Suspense
+                fallback={
+                  <Html center>
+                    <div style={{ color: "white" }}>
+                      <progress value={progress.toFixed(0)} max={"100"} />
+                    </div>
+                  </Html>
+                }
+              >
                 <NewDoor />
               </Suspense>
               <OrbitControls
