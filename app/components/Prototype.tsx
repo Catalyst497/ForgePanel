@@ -8,7 +8,6 @@ import { NewDoor } from "../assets/3dmodel/NewDoor";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useAppStore } from "../hooks/useAppStore";
 import { useProgress, Html } from "@react-three/drei";
-import CustomLoader from "./CustomLoader";
 
 const Prototype = () => {
   const [open, setOpen] = useState(false);
