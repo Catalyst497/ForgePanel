@@ -13,13 +13,13 @@
   --font-inter: var(--font-inter);
 }
 @theme {
-  --color-pri: #1F1F1F;
+  --color-pri: #fdfbcf;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f9f9f9;
+    --foreground: #1a1a1a;
   }
 }
 
@@ -28,16 +28,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
 }
-body {
-  @apply bg-[var(--color-pri)] text-white;
-}
+
 h1 {
   @apply text-4xl font-bold;
   
 }
-h2 {
-  @apply text-2xl;
-}
+
 h3 {
   @apply text-xl/8 font-semibold;
+}
+
+.samples-back-btn:hover svg {
+  transform: scale(1.1);
+  transition: transform 200ms ease-in-out;
 }

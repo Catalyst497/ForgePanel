@@ -5,6 +5,8 @@ import { Canvas } from "@react-three/fiber";
 import { Model as Door } from "../assets/3dmodel/Door";
 import { SlidingDoor } from "../assets/3dmodel/SlidingDoor";
 import { NewDoor } from "../assets/3dmodel/NewDoor";
+import { FireEscapeDoor } from "../assets/3dmodel/FireEscapeDoor";
+import { SimpleDoubleDoor } from "../assets/3dmodel/SimpleDoubleDoor";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useAppStore } from "../hooks/useAppStore";
 import { useProgress, Html } from "@react-three/drei";
@@ -18,13 +20,15 @@ const Prototype = () => {
     console.log(activeModel);
   }, [activeModel]);
   return (
-    <div className="w-[40%]">
+    <div className="w-[50%]">
       <div className="">
         <figure
-          className="-translate-x-[10%]"
+          className={`${
+            activeModel === "new-door" ? "-translate-x-[10%]" : ""
+          } `}
           style={{ width: "100%", height: "100vh" }}
         >
-          {true == true && (
+          {activeModel !== null ? (
             <Canvas>
               {/* <Environment preset="city" /> */}
               <ambientLight intensity={1} />
@@ -39,7 +43,20 @@ const Prototype = () => {
                   </Html>
                 }
               >
-                <NewDoor />
+                {activeModel === "new-door" && <NewDoor />}
+                {activeModel === "double-metal" && (
+                  <FireEscapeDoor
+                    rotation={[0, 1.5, 0]}
+                    scale={2.5}
+                    position={[0, -2, 0]}
+                  />
+                )}
+                {activeModel === "double-pvc" && (
+                  <SimpleDoubleDoor scale={1.2} position={[0, 1, 0]} />
+                )}
+                {activeModel === "sliding-glass" && <SlidingDoor scale={1.5} />}
+                {/* {activeModel === "double-pvc" && <SimpleDoubleDoor scale={1.2} position={[0,1,0]}/>} */}
+                {/*  */}
               </Suspense>
               <OrbitControls
                 enablePan={false}
@@ -48,6 +65,8 @@ const Prototype = () => {
                 maxPolarAngle={Math.PI / 2}
               />
             </Canvas>
+          ) : (
+            <div className="text-center">Select a door and it will appear in 3D here.</div>
           )}
 
           {/* <Canvas>

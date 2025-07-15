@@ -9,7 +9,6 @@ Title: Door
 "use client";
 import React, { useEffect } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { useAppStore } from "@/app/hooks/useAppStore";
 
 export function NewDoor(props) {
   const { nodes, materials } = useGLTF("/models/door/scene.gltf");

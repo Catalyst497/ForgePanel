@@ -7,28 +7,53 @@ Source: https://sketchfab.com/3d-models/sliding-door-c8d08012886f49798a0fb5ffbd5
 Title: Sliding Door
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useEffect } from "react";
+import { useGLTF, useTexture } from "@react-three/drei";
 
 export function SlidingDoor(props) {
-  const { nodes, materials } = useGLTF('/sliding_door.glb')
+  const { nodes, materials } = useGLTF("/sliding_door.glb");
+  const doorTexture = useTexture(
+    "/Wood/Wood093_2K-JPG_Color.jpg"
+  );
+  useEffect(() => {
+    console.log(doorTexture.image);
+    if (materials.Window_mat && doorTexture?.image) {
+      materials.Window_mat.map = doorTexture;
+      materials.Window_mat.needsUpdate = true;
+    }
+  }, []);
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1.429}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[0, 0.948, 0]} scale={0.006}>
             <group position={[95.797, -55.705, -2.751]}>
-              <mesh geometry={nodes.Object_7.geometry} material={materials.Ebony_mat} />
-              <mesh geometry={nodes.Object_8.geometry} material={materials.Window_Mat} />
-              <mesh geometry={nodes.Object_9.geometry} material={materials.Silver_mat} />
+              <mesh
+                geometry={nodes.Object_7.geometry}
+                material={materials.Ebony_mat}
+              />
+              <mesh
+                geometry={nodes.Object_8.geometry}
+                material={materials.Window_Mat}
+              />
+              <mesh
+                geometry={nodes.Object_9.geometry}
+                material={materials.Silver_mat}
+              />
             </group>
-            <mesh geometry={nodes.Object_4.geometry} material={materials.Ebony_mat} />
-            <mesh geometry={nodes.Object_5.geometry} material={materials.Window_Mat} />
+            <mesh
+              geometry={nodes.Object_4.geometry}
+              material={materials.Ebony_mat}
+            />
+            <mesh
+              geometry={nodes.Object_5.geometry}
+              material={materials.Window_Mat}
+            />
           </group>
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/sliding_door.glb')
+useGLTF.preload("/sliding_door.glb");
