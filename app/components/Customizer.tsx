@@ -1,10 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { useAppStore } from "../hooks/useAppStore";
+import { useRouter } from "next/navigation";
 
 const Customizer = () => {
+  const router = useRouter();
   const { activePosition, doorPositions, setActivePosition } = useAppStore();
-
+  const handleClick = (i: number) => {
+    setActivePosition(i)
+    router.push("/samples");
+  }
   return (
     <>
       {activePosition !== "remove" && (
@@ -16,11 +21,9 @@ const Customizer = () => {
                 const clicked = activePosition === i ? true : false;
                 return (
                   <button
-                    className={`px-4 py-2 rounded-sm border-[1px] hover:scale-[1.05] duration-[.3s] ${
-                      clicked ? "bg-white text-[var(--color-pri)]" : ""
-                    }`}
+                    className={`px-4 py-2 rounded-sm border-[1px] hover:scale-[1.05] duration-[.3s]`}
                     type="button"
-                    onClick={() => setActivePosition(i)}
+                    onClick={() => handleClick(i)}
                     key={i}
                   >
                     {position}

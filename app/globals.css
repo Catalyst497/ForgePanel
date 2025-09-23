@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* nprogress default styles */
+@import 'nprogress/nprogress.css';
+
+
+
+/* Customize the loading bar color/size */
+#nprogress .bar {
+  background: #5a5a5a !important; /* Tailwind blue-500 */
+  height: 4px !important;
+  opacity: opacity 0.3s ease-out;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #3b82f6, 0 0 5px #3b82f6 !important;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

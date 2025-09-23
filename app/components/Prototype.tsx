@@ -3,10 +3,12 @@
 import React, { Suspense, useMemo, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Model as Door } from "../assets/3dmodel/Door";
+import { DoubleGlass } from "../assets/3dmodel/DoubleGlass";
 import { SlidingDoor } from "../assets/3dmodel/SlidingDoor";
 import { NewDoor } from "../assets/3dmodel/NewDoor";
 import { FireEscapeDoor } from "../assets/3dmodel/FireEscapeDoor";
 import { SimpleDoubleDoor } from "../assets/3dmodel/SimpleDoubleDoor";
+import { MetalDoubleDoor } from "../assets/3dmodel/MetalDoubleDoor";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useAppStore } from "../hooks/useAppStore";
 import { useProgress, Html } from "@react-three/drei";
@@ -16,9 +18,6 @@ const Prototype = () => {
   const { activeModel } = useAppStore();
   const { progress } = useProgress();
 
-  useMemo(() => {
-    console.log(activeModel);
-  }, [activeModel]);
   return (
     <div className="w-[50%]">
       <div className="">
@@ -43,20 +42,38 @@ const Prototype = () => {
                   </Html>
                 }
               >
-                {activeModel === "new-door" && <NewDoor />}
-                {activeModel === "double-metal" && (
+                {activeModel === "wood swing door" && <NewDoor />}
+                {activeModel.includes("pvc double door") && (
+                  <SimpleDoubleDoor
+                    key={"double-pvc"}
+                    scale={1.5}
+                    isWood={false}
+                    position={[0, -0.5, 0]}
+                  />
+                )}
+
+                {activeModel.includes("wood double door") && (
+                  <SimpleDoubleDoor
+                    key={"double-wood"}
+                    scale={1.5}
+                    isWood={true}
+                    position={[0, -0.5, 0]}
+                  />
+                )}
+                {activeModel.includes("glass double door") && (
+                  <DoubleGlass position={[0, -2, 0]} />
+                )}
+                {activeModel === "metal double door 4" && (
                   <FireEscapeDoor
                     rotation={[0, 1.5, 0]}
                     scale={2.5}
                     position={[0, -2, 0]}
                   />
                 )}
-                {activeModel === "double-pvc" && (
-                  <SimpleDoubleDoor scale={1.2} position={[0, 1, 0]} />
+                {activeModel === "metal double door 2" && <MetalDoubleDoor />}
+                {activeModel.includes("sliding glass door") && (
+                  <SlidingDoor scale={1.5} />
                 )}
-                {activeModel === "sliding-glass" && <SlidingDoor scale={1.5} />}
-                {/* {activeModel === "double-pvc" && <SimpleDoubleDoor scale={1.2} position={[0,1,0]}/>} */}
-                {/*  */}
               </Suspense>
               <OrbitControls
                 enablePan={false}
@@ -66,22 +83,10 @@ const Prototype = () => {
               />
             </Canvas>
           ) : (
-            <div className="text-center">Select a door and it will appear in 3D here.</div>
+            <div className="text-center">
+              Select a door and it will appear in 3D here.
+            </div>
           )}
-
-          {/* <Canvas>
-            <Environment preset="sunset" />
-            <Suspense fallback={null}>
-              <Door open={open} setOpen={setOpen} />
-            </Suspense>
-            <OrbitControls
-              enablePan={false}
-              enableZoom={false}
-              minPolarAngle={Math.PI / 2}
-              maxPolarAngle={Math.PI / 2}
-              target={[-1, 0, 0]}
-            />
-          </Canvas> */}
         </figure>
       </div>
     </div>

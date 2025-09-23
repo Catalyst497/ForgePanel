@@ -7,28 +7,66 @@ Source: https://sketchfab.com/3d-models/simple-double-door-2837dcca0e7b4bcd8d894
 Title: Simple Double Door
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useEffect } from "react";
+import { useGLTF, useTexture } from "@react-three/drei";
 
 export function SimpleDoubleDoor(props) {
-  const { nodes, materials } = useGLTF('/models/simple_double_door/scene.gltf')
+  const { nodes, materials } = useGLTF("/models/simple_double_door/scene.gltf");
+  const doorTexture = useTexture("/Wood/Wood093_2K-JPG_Color.jpg");
+  useEffect(() => {
+    if(props.isWood) {
+      if (materials?.Door_inside && doorTexture?.image) {
+        materials.Door_inside.map = doorTexture;
+      }
+      if (materials?.Door_outside && doorTexture?.image) {
+        materials.Door_outside.map = doorTexture;
+      }
+    } else {
+      materials.Door_inside.map = null;
+      materials.Door_outside.map = null;
+    }
+    materials.Door_inside.needsUpdate = true;
+    materials.Door_outside.needsUpdate = true;
+  }, [props.isWood, doorTexture, materials]);
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1}>
         <group position={[0.805, 0.14, 0]} rotation={[0, 0, -0.308]}>
-          <mesh geometry={nodes.Panel001_Door_inside_0.geometry} material={materials.Door_inside} />
-          <mesh geometry={nodes.Panel001_Door_outside_0.geometry} material={materials.Door_outside} />
+          <mesh
+            geometry={nodes.Panel001_Door_inside_0.geometry}
+            material={materials.Door_inside}
+          />
+          <mesh
+            geometry={nodes.Panel001_Door_outside_0.geometry}
+            material={materials.Door_outside}
+          />
         </group>
         <group position={[-0.805, 0.14, 0]} rotation={[0, 0, 0.707]}>
-          <mesh geometry={nodes.Panel_Door_inside_0.geometry} material={materials.Door_inside} />
-          <mesh geometry={nodes.Panel_Door_outside_0.geometry} material={materials.Door_outside} />
-          <mesh geometry={nodes.Handle_Handle_inside_0.geometry} material={materials.Handle_inside} position={[0.735, 0, 1.003]} />
+          <mesh
+            geometry={nodes.Panel_Door_inside_0.geometry}
+            material={materials.Door_inside}
+          />
+          <mesh
+            geometry={nodes.Panel_Door_outside_0.geometry}
+            material={materials.Door_outside}
+          />
+          <mesh
+            geometry={nodes.Handle_Handle_inside_0.geometry}
+            material={materials.Handle_inside}
+            position={[0.735, 0, 1.003]}
+          />
         </group>
-        <mesh geometry={nodes.Door_Door_inside_0.geometry} material={materials.Door_inside} />
-        <mesh geometry={nodes.Door_Door_outside_0.geometry} material={materials.Door_outside} />
+        <mesh
+          geometry={nodes.Door_Door_inside_0.geometry}
+          material={materials.Door_inside}
+        />
+        <mesh
+          geometry={nodes.Door_Door_outside_0.geometry}
+          material={materials.Door_outside}
+        />
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload("/models/simple_double_door/scene.gltf");

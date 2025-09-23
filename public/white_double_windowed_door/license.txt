@@ -1,0 +1,11 @@
+Model Information:
+* title:	White Double Windowed Door
+* source:	https://sketchfab.com/3d-models/white-double-windowed-door-2d842a0f609245fb9bbe922669891ba4
+* author:	TastyShed (https://sketchfab.com/TastyFabs)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "White Double Windowed Door" (https://sketchfab.com/3d-models/white-double-windowed-door-2d842a0f609245fb9bbe922669891ba4) by TastyShed (https://sketchfab.com/TastyFabs) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

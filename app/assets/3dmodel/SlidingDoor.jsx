@@ -16,7 +16,6 @@ export function SlidingDoor(props) {
     "/Wood/Wood093_2K-JPG_Color.jpg"
   );
   useEffect(() => {
-    console.log(doorTexture.image);
     if (materials.Window_mat && doorTexture?.image) {
       materials.Window_mat.map = doorTexture;
       materials.Window_mat.needsUpdate = true;

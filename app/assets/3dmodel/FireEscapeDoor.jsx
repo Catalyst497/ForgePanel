@@ -18,7 +18,6 @@ export function FireEscapeDoor(props) {
   );
   const doorTexture = useTexture( "/models/fire_escape_exit_doors/textures/Metal_Guard.001_metallicRoughness.png")
    useEffect(() => {
-    console.log(doorTexture.image)
       if (materials["316313476cfe2ddee7782e7855b64367"] && doorTexture?.image) {
         materials["316313476cfe2ddee7782e7855b64367"].map = doorTexture;
         materials["316313476cfe2ddee7782e7855b64367"].needsUpdate = true;
@@ -76,4 +75,4 @@ export function FireEscapeDoor(props) {
   );
 }
 
-useGLTF.preload("/scene.gltf");
+useGLTF.preload("/models/fire_escape_exit_doors/scene.gltf");

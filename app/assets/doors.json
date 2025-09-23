@@ -4,678 +4,872 @@
     "image": "/product-images/bifold glass door 2.jpg",
     "material": "glass",
     "type": "bifold",
-    "style": "door"
+    "style": "door",
+    "slug": "bifold-glass-door-2",
+    "price": 860
   },
   {
     "name": "bifold glass door",
     "image": "/product-images/bifold glass door.jpg",
     "material": "glass",
     "type": "bifold",
-    "style": "door"
+    "style": "door",
+    "slug": "bifold-glass-door",
+    "price": 190
   },
   {
     "name": "composite double door 2",
     "image": "/product-images/composite double door 2.jpg",
     "material": "composite",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-double-door-2",
+    "price": 750
   },
   {
     "name": "composite double door 3",
     "image": "/product-images/composite double door 3.jpg",
     "material": "composite",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-double-door-3",
+    "price": 1000
   },
   {
     "name": "composite double door 4",
     "image": "/product-images/composite double door 4.jpg",
     "material": "composite",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-double-door-4",
+    "price": 330
   },
   {
     "name": "composite double door",
     "image": "/product-images/composite double door.png",
     "material": "composite",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-double-door",
+    "price": 980
   },
   {
     "name": "composite french door 2",
     "image": "/product-images/composite french door 2.jpg",
     "material": "composite",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-french-door-2",
+    "price": 860
   },
   {
     "name": "composite french door 3",
     "image": "/product-images/composite french door 3.jpg",
     "material": "composite",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-french-door-3",
+    "price": 230
   },
   {
     "name": "composite primed door",
     "image": "/product-images/composite primed door.jpg",
     "material": "composite",
     "type": "primed",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-primed-door",
+    "price": 200
   },
   {
     "name": "composite swing door",
     "image": "/product-images/composite swing door.webp",
     "material": "composite",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "composite-swing-door",
+    "price": 820
   },
   {
     "name": "fiberglass pocket door 2",
     "image": "/product-images/fiberglass pocket door 2.jpg",
     "material": "fiberglass",
     "type": "pocket",
-    "style": "door"
+    "style": "door",
+    "slug": "fiberglass-pocket-door-2",
+    "price": 150
   },
   {
     "name": "fiberglass pocket door",
     "image": "/product-images/fiberglass pocket door.jpg",
     "material": "fiberglass",
     "type": "pocket",
-    "style": "door"
+    "style": "door",
+    "slug": "fiberglass-pocket-door",
+    "price": 340
   },
   {
     "name": "Flush Door 2",
     "image": "/product-images/Flush Door 2.jpg",
     "material": "wood",
     "type": "flush",
-    "style": "door"
+    "style": "door",
+    "slug": "flush-door-2",
+    "price": 870
   },
   {
     "name": "flush door",
     "image": "/product-images/flush door.jpg",
     "material": "wood",
     "type": "flush",
-    "style": "door"
+    "style": "door",
+    "slug": "flush-door",
+    "price": 900
   },
   {
     "name": "flush-door",
     "image": "/product-images/flush-door.webp",
     "material": "wood",
     "type": "flush",
-    "style": "door"
+    "style": "door",
+    "slug": "flush-door-3",
+    "price": 530
   },
   {
     "name": "French-door2",
     "image": "/product-images/French-door2.jpg",
     "material": "glass",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "french-door2",
+    "price": 260
   },
   {
     "name": "glass bifold door",
     "image": "/product-images/glass bifold door.jpg",
     "material": "glass",
     "type": "bifold",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-bifold-door",
+    "price": 970
   },
   {
     "name": "glass barn door 2",
     "image": "/product-images/glass barn door 2.jpg",
     "material": "glass",
     "type": "barn",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-barn-door-2",
+    "price": 230
   },
   {
     "name": "glass barn door 3",
     "image": "/product-images/glass barn door 3.png",
     "material": "glass",
     "type": "barn",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-barn-door-3",
+    "price": 130
   },
   {
     "name": "glass barn door 4",
     "image": "/product-images/glass barn door 4.jpg",
     "material": "glass",
     "type": "barn",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-barn-door-4",
+    "price": 140
   },
   {
     "name": "glass barn door",
     "image": "/product-images/glass barn door.jpg",
     "material": "glass",
     "type": "barn",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-barn-door",
+    "price": 660
   },
   {
     "name": "glass bifold closet door",
     "image": "/product-images/glass bifold closet door.jpg",
     "material": "glass",
     "type": "bifold",
-    "style": "closet"
+    "style": "closet",
+    "slug": "glass-bifold-closet-door",
+    "price": 1000
   },
   {
     "name": "glass bifold door",
     "image": "/product-images/glass bifold door.jpg",
     "material": "glass",
     "type": "bifold",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-bifold-door-2",
+    "price": 450
   },
   {
     "name": "glass double door 2",
     "image": "/product-images/glass double door 2.jpg",
     "material": "glass",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-double-door-2",
+    "price": 120
   },
   {
     "name": "glass double door 3",
     "image": "/product-images/glass double door 3.jpg",
     "material": "glass",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-double-door-3",
+    "price": 920
   },
   {
     "name": "glass double door 4",
     "image": "/product-images/glass double door 4.jpg",
     "material": "glass",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-double-door-4",
+    "price": 890
   },
   {
     "name": "glass double door",
     "image": "/product-images/glass double door.jpg",
     "material": "glass",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-double-door",
+    "price": 940
   },
   {
     "name": "glass pocket door 2",
     "image": "/product-images/glass pocket door 2.png",
     "material": "glass",
     "type": "pocket",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-pocket-door-2",
+    "price": 130
   },
   {
     "name": "glass pocket door 3",
     "image": "/product-images/glass pocket door 3.jpg",
     "material": "glass",
     "type": "pocket",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-pocket-door-3",
+    "price": 730
   },
   {
     "name": "glass pocket door 4",
     "image": "/product-images/glass pocket door 4.jpg",
     "material": "glass",
     "type": "pocket",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-pocket-door-4",
+    "price": 840
   },
   {
     "name": "glass pocket door",
     "image": "/product-images/glass pocket door.jpg",
     "material": "glass",
     "type": "pocket",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-pocket-door",
+    "price": 170
   },
   {
     "name": "glass sliding door",
     "image": "/product-images/glass sliding door.jpeg",
     "material": "glass",
     "type": "sliding",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-sliding-door",
+    "price": 160
   },
   {
     "name": "glass swing door 2",
     "image": "/product-images/glass swing door 2.avif",
     "material": "glass",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-swing-door-2",
+    "price": 780
   },
   {
     "name": "glass swing door",
     "image": "/product-images/glass swing door.jpg",
     "material": "glass",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-swing-door",
+    "price": 550
   },
   {
     "name": "Glass-french-door",
     "image": "/product-images/Glass-french-door.jpg",
     "material": "glass",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-french-door",
+    "price": 980
   },
   {
     "name": "glass-metal swing door",
     "image": "/product-images/glass-metal swing door.jpg",
     "material": "glass-metal",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "glass-metal-swing-door",
+    "price": 830
   },
   {
     "name": "metal barn door 2",
     "image": "/product-images/metal barn door 2.jpg",
     "material": "metal",
     "type": "barn",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-barn-door-2",
+    "price": 680
   },
   {
     "name": "metal barn door 3",
     "image": "/product-images/metal barn door 3.jpg",
     "material": "metal",
     "type": "barn",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-barn-door-3",
+    "price": 660
   },
   {
     "name": "metal barn door",
     "image": "/product-images/metal barn door.jpg",
     "material": "metal",
     "type": "barn",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-barn-door",
+    "price": 700
   },
   {
     "name": "metal double door 2",
     "image": "/product-images/metal double door 2.jpg",
     "material": "metal",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-double-door-2",
+    "price": 220
   },
   {
     "name": "metal double door 3",
     "image": "/product-images/metal double door 3.webp",
     "material": "metal",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-double-door-3",
+    "price": 970
   },
   {
     "name": "metal double door 4",
     "image": "/product-images/metal double door 4.jpg",
     "material": "metal",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-double-door-4",
+    "price": 310
   },
   {
     "name": "metal double door",
     "image": "/product-images/metal double door.jpg",
     "material": "metal",
     "type": "double",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-double-door",
+    "price": 790
   },
   {
     "name": "metal french door 2",
     "image": "/product-images/metal french door 2.jpg",
     "material": "metal",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-french-door-2",
+    "price": 280
   },
   {
     "name": "metal french door 3",
     "image": "/product-images/metal french door 3.jpg",
     "material": "metal",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-french-door-3",
+    "price": 1000
   },
   {
     "name": "metal french door",
     "image": "/product-images/metal french door.jpg",
     "material": "metal",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-french-door",
+    "price": 810
   },
   {
     "name": "metal pocket door",
     "image": "/product-images/metal pocket door.jpg",
     "material": "metal",
     "type": "pocket",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-pocket-door",
+    "price": 700
   },
   {
     "name": "metal swing door 2",
     "image": "/product-images/metal swing door 2.jpg",
     "material": "metal",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-swing-door-2",
+    "price": 130
   },
   {
     "name": "metal swing door 3",
     "image": "/product-images/metal swing door 3.jpg",
     "material": "metal",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-swing-door-3",
+    "price": 270
   },
   {
     "name": "metal swing door 4",
     "image": "/product-images/metal swing door 4.jpg",
     "material": "metal",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-swing-door-4",
+    "price": 670
   },
   {
     "name": "metal swing door",
     "image": "/product-images/metal swing door.jpg",
     "material": "metal",
     "type": "swing",
-    "style": "door"
+    "style": "door",
+    "slug": "metal-swing-door",
+    "price": 290
   },
   {
     "name": "painted french door 2",
     "image": "/product-images/painted french door 2.jpg",
     "material": "painted",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "painted-french-door-2",
+    "price": 640
   },
   {
     "name": "painted french door 3",
     "image": "/product-images/painted french door 3.jpg",
     "material": "painted",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "painted-french-door-3",
+    "price": 750
   },
   {
     "name": "painted french door 4",
     "image": "/product-images/painted french door 3.jpg",
     "material": "painted",
     "type": "french",
-    "style": "door"
+    "style": "door",
+    "slug": "painted-french-door-4",
+    "price": 950
   },
   {
     "name": "painted french door",
     "material": "painted",
     "type": "french",
     "style": "door",
-    "image": "/product-images/painted french door.jpg"
+    "image": "/product-images/painted french door.jpg",
+    "slug": "painted-french-door",
+    "price": 740
   },
   {
     "name": "pocket-door",
     "material": "unknown",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/pocket-door.webp"
+    "image": "/product-images/pocket-door.webp",
+    "slug": "pocket-door",
+    "price": 900
   },
   {
     "name": "pocket-door2",
     "material": "unknown",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/pocket-door2.jpg"
+    "image": "/product-images/pocket-door2.jpg",
+    "slug": "pocket-door2",
+    "price": 370
   },
   {
     "name": "pocket-door3",
     "material": "unknown",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/pocket-door3.jpg"
+    "image": "/product-images/pocket-door3.jpg",
+    "slug": "pocket-door3",
+    "price": 650
   },
   {
     "name": "primed french door 2",
     "material": "primed",
     "type": "french",
     "style": "door",
-    "image": "/product-images/primed french door 2.webp"
+    "image": "/product-images/primed french door 2.webp",
+    "slug": "primed-french-door-2",
+    "price": 260
   },
   {
     "name": "primed french door 3",
     "material": "primed",
     "type": "french",
     "style": "door",
-    "image": "/product-images/primed french door 3.webp"
+    "image": "/product-images/primed french door 3.webp",
+    "slug": "primed-french-door-3",
+    "price": 910
   },
   {
     "name": "primed french door",
     "material": "primed",
     "type": "french",
     "style": "door",
-    "image": "/product-images/primed french door.webp"
+    "image": "/product-images/primed french door.webp",
+    "slug": "primed-french-door",
+    "price": 410
   },
   {
     "name": "pvc double door 2",
     "material": "pvc",
     "type": "double",
     "style": "door",
-    "image": "/product-images/pvc double door 2.jpg"
+    "image": "/product-images/pvc double door 2.jpg",
+    "slug": "pvc-double-door-2",
+    "price": 920
   },
   {
     "name": "PVC double door",
     "material": "pvc",
     "type": "double",
     "style": "door",
-    "image": "/product-images/PVC double door.webp"
+    "image": "/product-images/PVC double door.webp",
+    "slug": "pvc-double-door",
+    "price": 390
   },
   {
     "name": "pvc french door 2",
     "material": "pvc",
     "type": "french",
     "style": "door",
-    "image": "/product-images/pvc french door 2.jpg"
+    "image": "/product-images/pvc french door 2.jpg",
+    "slug": "pvc-french-door-2",
+    "price": 310
   },
   {
     "name": "pvc french door 3",
     "material": "pvc",
     "type": "french",
     "style": "door",
-    "image": "/product-images/pvc french door 3.jpg"
+    "image": "/product-images/pvc french door 3.jpg",
+    "slug": "pvc-french-door-3",
+    "price": 520
   },
   {
     "name": "pvc french door",
     "material": "pvc",
     "type": "french",
     "style": "door",
-    "image": "/product-images/pvc french door.jpg"
+    "image": "/product-images/pvc french door.jpg",
+    "slug": "pvc-french-door",
+    "price": 110
   },
   {
     "name": "sliding glass door 2",
     "material": "glass",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/sliding glass door 2.jpg"
+    "image": "/product-images/sliding glass door 2.jpg",
+    "slug": "sliding-glass-door-2",
+    "price": 530
   },
   {
     "name": "sliding glass door 3",
     "material": "glass",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/sliding glass door 3.png"
+    "image": "/product-images/sliding glass door 3.png",
+    "slug": "sliding-glass-door-3",
+    "price": 170
   },
   {
     "name": "sliding glass door",
     "material": "glass",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/sliding glass door.jpg"
+    "image": "/product-images/sliding glass door.jpg",
+    "slug": "sliding-glass-door",
+    "price": 580
   },
   {
     "name": "sliding-door",
     "material": "unknown",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/sliding-door.jpg"
+    "image": "/product-images/sliding-door.jpg",
+    "slug": "sliding-door",
+    "price": 690
   },
   {
     "name": "sliding-door2",
     "material": "unknown",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/sliding-door2.jpg"
+    "image": "/product-images/sliding-door2.jpg",
+    "slug": "sliding-door2",
+    "price": 980
   },
   {
     "name": "sliding-door3",
     "material": "unknown",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/sliding-door3.jpg"
+    "image": "/product-images/sliding-door3.jpg",
+    "slug": "sliding-door3",
+    "price": 770
   },
   {
     "name": "wood barn door 2",
     "material": "wood",
     "type": "barn",
     "style": "door",
-    "image": "/product-images/wood barn door 2.jpg"
+    "image": "/product-images/wood barn door 2.jpg",
+    "slug": "wood-barn-door-2",
+    "price": 460
   },
   {
     "name": "wood barn door 3",
     "material": "wood",
     "type": "barn",
     "style": "door",
-    "image": "/product-images/wood barn door 3.jpg"
+    "image": "/product-images/wood barn door 3.jpg",
+    "slug": "wood-barn-door-3",
+    "price": 600
   },
   {
     "name": "wood barn door",
     "material": "wood",
     "type": "barn",
     "style": "door",
-    "image": "/product-images/wood barn door.jpg"
+    "image": "/product-images/wood barn door.jpg",
+    "slug": "wood-barn-door",
+    "price": 380
   },
   {
     "name": "wood bifold door 2",
     "material": "wood",
     "type": "bifold",
     "style": "door",
-    "image": "/product-images/wood bifold door 2.webp"
+    "image": "/product-images/wood bifold door 2.webp",
+    "slug": "wood-bifold-door-2",
+    "price": 780
   },
   {
     "name": "wood bifold door 3",
     "material": "wood",
     "type": "bifold",
     "style": "door",
-    "image": "/product-images/wood bifold door 3.webp"
+    "image": "/product-images/wood bifold door 3.webp",
+    "slug": "wood-bifold-door-3",
+    "price": 650
   },
   {
     "name": "wood bifold door 4",
     "material": "wood",
     "type": "bifold",
     "style": "door",
-    "image": "/product-images/wood bifold door 4.jpg"
+    "image": "/product-images/wood bifold door 4.jpg",
+    "slug": "wood-bifold-door-4",
+    "price": 400
   },
   {
     "name": "wood bifold door",
     "material": "wood",
     "type": "bifold",
     "style": "door",
-    "image": "/product-images/wood bifold door.jpg"
+    "image": "/product-images/wood bifold door.jpg",
+    "slug": "wood-bifold-door",
+    "price": 510
   },
   {
     "name": "wood double door 2",
     "material": "wood",
     "type": "double",
     "style": "door",
-    "image": "/product-images/wood double door 2.jpg"
+    "image": "/product-images/wood double door 2.jpg",
+    "slug": "wood-double-door-2",
+    "price": 900
   },
   {
     "name": "wood double door",
     "material": "wood",
     "type": "double",
     "style": "door",
-    "image": "/product-images/wood double door.jpg"
+    "image": "/product-images/wood double door.jpg",
+    "slug": "wood-double-door",
+    "price": 680
   },
   {
     "name": "wood french door 2",
     "material": "wood",
     "type": "french",
     "style": "door",
-    "image": "/product-images/wood french door 2.jpg"
+    "image": "/product-images/wood french door 2.jpg",
+    "slug": "wood-french-door-2",
+    "price": 210
   },
   {
     "name": "wood french door 3",
     "material": "wood",
     "type": "french",
     "style": "door",
-    "image": "/product-images/wood french door 3.jpg"
+    "image": "/product-images/wood french door 3.jpg",
+    "slug": "wood-french-door-3",
+    "price": 830
   },
   {
     "name": "wood french door 4",
     "material": "wood",
     "type": "french",
     "style": "door",
-    "image": "/product-images/wood french door 4.jpg"
+    "image": "/product-images/wood french door 4.jpg",
+    "slug": "wood-french-door-4",
+    "price": 230
   },
   {
     "name": "wood french door",
     "material": "wood",
     "type": "french",
     "style": "door",
-    "image": "/product-images/wood french door.jpg"
+    "image": "/product-images/wood french door.jpg",
+    "slug": "wood-french-door",
+    "price": 930
   },
   {
     "name": "wood pocket door 2",
     "material": "wood",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/wood pocket door 2.jpg"
+    "image": "/product-images/wood pocket door 2.jpg",
+    "slug": "wood-pocket-door-2",
+    "price": 620
   },
   {
     "name": "wood pocket door 3",
     "material": "wood",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/wood pocket door 3.jpg"
+    "image": "/product-images/wood pocket door 3.jpg",
+    "slug": "wood-pocket-door-3",
+    "price": 710
   },
   {
     "name": "wood pocket door 4",
     "material": "wood",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/wood pocket door 4.jpg"
+    "image": "/product-images/wood pocket door 4.jpg",
+    "slug": "wood-pocket-door-4",
+    "price": 160
   },
   {
     "name": "wood pocket door",
     "material": "wood",
     "type": "pocket",
     "style": "door",
-    "image": "/product-images/wood pocket door.jpg"
+    "image": "/product-images/wood pocket door.jpg",
+    "slug": "wood-pocket-door",
+    "price": 400
   },
   {
     "name": "wood sliding door 2",
     "material": "wood",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/wood sliding door 2.jpg"
+    "image": "/product-images/wood sliding door 2.jpg",
+    "slug": "wood-sliding-door-2",
+    "price": 840
   },
   {
     "name": "wood sliding door 3",
     "material": "wood",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/wood sliding door 3.jpg"
+    "image": "/product-images/wood sliding door 3.jpg",
+    "slug": "wood-sliding-door-3",
+    "price": 530
   },
   {
     "name": "wood sliding door 4",
     "material": "wood",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/wood sliding door 4.jpg"
+    "image": "/product-images/wood sliding door 4.jpg",
+    "slug": "wood-sliding-door-4",
+    "price": 810
   },
   {
     "name": "wood sliding door 5",
     "material": "wood",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/wood sliding door 5.jpg"
+    "image": "/product-images/wood sliding door 5.jpg",
+    "slug": "wood-sliding-door-5",
+    "price": 210
   },
   {
     "name": "wood sliding door",
     "material": "wood",
     "type": "sliding",
     "style": "door",
-    "image": "/product-images/wood sliding door.jpg"
+    "image": "/product-images/wood sliding door.jpg",
+    "slug": "wood-sliding-door",
+    "price": 780
   },
   {
     "name": "wood swing door",
     "material": "wood",
     "type": "swing",
     "style": "door",
-    "image": "/product-images/wood swing door.jpg"
+    "image": "/product-images/wood swing door.jpg",
+    "slug": "wood-swing-door",
+    "price": 970
   },
   {
     "name": "wooden swing door 3",
     "material": "wood",
     "type": "swing",
     "style": "door",
-    "image": "/product-images/wooden swing door 3.jpg"
+    "image": "/product-images/wooden swing door 3.jpg",
+    "slug": "wooden-swing-door-3",
+    "price": 530
   },
   {
     "name": "wooden swing door",
     "material": "wood",
     "type": "swing",
     "style": "door",
-    "image": "/product-images/wooden swing door.webp"
+    "image": "/product-images/wooden swing door.webp",
+    "slug": "wooden-swing-door",
+    "price": 580
   }
 ]

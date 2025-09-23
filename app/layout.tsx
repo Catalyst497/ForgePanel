@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Prototype from "./components/Prototype";
+import ProgressBar from "./components/ProgressBar";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,9 +17,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 const inter = Inter({
-  variable: '--font-inter', 
-  subsets: ['latin'],
-  display: 'swap',
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,12 +32,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+ 
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
-        {children}
+        <ProgressBar />
+        <div className="mt-20">
+          <Navbar />
+          <div className="main mt-[5rem] flex">
+            <Prototype />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
