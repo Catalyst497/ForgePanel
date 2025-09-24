@@ -6,13 +6,7 @@ import { ChevronLeftCircle } from "lucide-react"; // Icons
 import { Door } from "@/app/Types";
 
 
-interface DoorPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-const doorDetails = ({ params }: DoorPageProps) => {
+const doorDetails = ({ params }: any) => {
   const {doors} = useAppStore()
   const router = useRouter();
 
