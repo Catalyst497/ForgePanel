@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.17.1",
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
     "axios": "^1.11.0",
+    "lottie-react": "^2.4.1",
     "lucide-react": "^0.503.0",
     "maath": "^0.10.8",
     "mongodb": "^6.19.0",
@@ -19,7 +21,6 @@
     "nprogress": "^0.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-loader-spinner": "^6.1.6",
     "react-responsive": "^10.0.1",
     "three": "^0.176.0",
     "zustand": "^5.0.4"

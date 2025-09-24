@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation"; // App Router navigation hook
 import { useDoors } from "../assets/requests";
 import { Door } from "../Types";
 import MainContent from "./MainContent";
-import { FallingLines } from "react-loader-spinner";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Samples = () => {
   // Pulling values & actions from the global store
@@ -144,12 +144,7 @@ const Samples = () => {
         {loading && (
           <div className="h-full flex justify-center items-center">
             <div className="mt-[-20rem]">
-              <FallingLines
-                color="#1f1f1f"
-                width="100"
-                visible={true}
-                aria-label="falling-circles-loading"
-              />
+              <DotLottieReact src="/Loading-Dots-Blue.lottie" loop autoplay />
             </div>
           </div>
         )}
