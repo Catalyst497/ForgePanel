@@ -38,7 +38,7 @@ const doorDetails = ({ params }: any) => {
       </button>
       <h1 className="capitalize mt-10">{model?.name}</h1>
       <img src={model?.image} alt={model?.name} className="h-[15rem] mt-8" />
-      <div className="py-8">Price: ${}</div>
+      <div className="py-8">Price: ${model?.price}</div>
     </div>
   );
 };

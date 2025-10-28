@@ -6,4 +6,5 @@ export type Door = {
   image?: string;
   location?: string;
   slug?: string;
+  price?: number;
 };
