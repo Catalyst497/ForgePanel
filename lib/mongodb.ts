@@ -13,7 +13,6 @@ if (!process.env.MONGODB_URI) {
 
 if (process.env.NODE_ENV === "development") {
   // In dev mode, use a global variable so connection is not constantly recreated
-  console.log(uri)
   if (!(global as any)._mongoClientPromise) {
     client = new MongoClient(uri, options);
     (global as any)._mongoClientPromise = client

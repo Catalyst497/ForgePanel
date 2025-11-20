@@ -3,8 +3,6 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Prototype from "./components/Prototype";
-import ProgressBar from "./components/ProgressBar";
-
 
 
 const geistSans = Geist({
@@ -38,7 +36,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
-        <ProgressBar />
         <div className="mt-20">
           <Navbar />
           <div className="main mt-[5rem] flex">
